@@ -18,7 +18,7 @@ if(DB_TYPE=='mysql') :
 	require __DIR__.'/mysql.php';
 	try {
 		$redis = new Mao10Mysql;
-		$redis->connect('192.168.1.11','4332a507-5e0f','4332a507-5e0f','ddf507ba229bd417bab97dfc7f3c02901'); //在此处设置数据库配置信息  ！！！注意：请保证已经建立了一个空数据库用于安装！！！
+		$redis->connect('192.168.1.11','4332a507-5e0f','be53293a-b4f5','ddf507ba229bd417bab97dfc7f3c02901'); //在此处设置数据库配置信息  ！！！注意：请保证已经建立了一个空数据库用于安装！！！
 		$redis->setprefix('maoo_');
         $redis->flush();
 	}
